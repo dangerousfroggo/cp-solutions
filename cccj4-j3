@@ -1,0 +1,12 @@
+playeramt = int(input())
+scoreOccurences = []
+scores = []
+for i in range(playeramt):
+  b = int(input())
+  if b not in scoreOccurences:
+    scoreOccurences.append(b)
+  scores.append(b)
+
+scoreOccurences.sort()
+
+print(scoreOccurences[-3], " ", scores.count(scoreOccurences[-3]))
